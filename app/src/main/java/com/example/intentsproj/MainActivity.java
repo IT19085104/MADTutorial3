@@ -34,11 +34,16 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra("n1",edNum1.getText().toString());
         intent.putExtra("n2",edNum2.getText().toString());
 
+        //First toast message
+
         //Context context = getApplicationContext();
         //CharSequence message = "You just clicked the OK button";
         //int duration = Toast.LENGTH_SHORT;
         //Toast toast = Toast.makeText(context, message, duration);
         //toast.show();
+
+
+        //Custom toast message
 
         //Creating the LayoutInflater instance
         LayoutInflater li = getLayoutInflater();

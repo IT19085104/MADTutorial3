@@ -29,10 +29,12 @@ public class SecondActivity extends AppCompatActivity {
         edNum2=findViewById(R.id.edNum2);
         lbDisplay=findViewById(R.id.lbDisplay);
 
+        //Getting values passed through intent
         Intent intent = getIntent();
          num1  = intent.getStringExtra("n1");
          num2 = intent.getStringExtra("n2");
 
+         //Setting the passed values in the text view
         edNum1.setText(num1);
         edNum2.setText(num2);
 
@@ -41,6 +43,7 @@ public class SecondActivity extends AppCompatActivity {
 
     }
 
+    //Methods to perform arithmetic operations
     public void addNumbers(View view){
        lbDisplay.setText(num1 + " + " + num2 + " = "+(number1+number2));
     }
